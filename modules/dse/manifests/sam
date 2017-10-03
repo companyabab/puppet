@@ -1,0 +1,12 @@
+file {'/etc/dse/cassandra/cassandra.yaml' :
+          ensure => file,
+          content => template("dse/cassandra.yaml.erb"),
+          before => Service['dse'],
+}
+notify {"osfamily: $::osfamily":}
+notify {"ipaddress1 => $::ipaddress":}
+$ipaddress = $::ipaddress
+$clustername = "Sumanth_cluster"
+$endpoint = "GossipingPropertyFileSnitch"
+$authorizer1 = "CassandraAuthorizer"
+$authenticator1 = "PasswordAuthenticator"

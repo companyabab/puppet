@@ -1,0 +1,16 @@
+$ipaddress = $::ipaddress
+package { 'dse-full':
+   ensure => '4.8.9-1',
+   before => Service['dse'],
+  }
+service  {'dse':
+         ensure => running,
+         enable => true,
+}
+file {'/etc/yum.repos.d/cassandra.repo' :
+          ensure => file,
+          source => ['puppet:///modules/dse/repo'],
+          before => Package['dse-full'],
+}
+}
+~                                                

@@ -1,0 +1,20 @@
+{
+  "Gemfile": "463c0b84beda0b5c7c4b9ec58258f45f",
+  "LICENSE": "861b06b2d416ffc4b39d8ee9c31c41d2",
+  "Modulefile": "c04375a8684c6969b1db6fc7c74245dc",
+  "README.md": "2be3c8518d137561c418ffcfa39dfab3",
+  "Rakefile": "66e384b001ab6d321099bdc3105665eb",
+  "manifests/init.pp": "f0e98e1832c97f7d3e13eaf891ecb66e",
+  "manifests/install.pp": "7c14d24ecb07d1ad327b0841113a90a7",
+  "manifests/suse.pp": "b1d0b7f6879a341471d40d687074b582",
+  "metadata.json": "54b8c1a5bc8674523cea05b78091fc74",
+  "spec/acceptance/jdk7_spec.rb": "d354038a0f16080c9d2f6cc67facf456",
+  "spec/acceptance/jdk8_spec.rb": "c5117bbf0a9dadff978e9a7e81af92c6",
+  "spec/acceptance/jre8_spec.rb": "8b2f64f61d336e4fcf5cd0fcda6e63fe",
+  "spec/acceptance/nodesets/centos67.yml": "0778d5d8c0aff6702f61020fa536f415",
+  "spec/acceptance/nodesets/debian8.yml": "d7c59d23a2d603114a46ee321cf3e823",
+  "spec/acceptance/nodesets/default.yml": "81d8205bd90a05dae0051e17969ef9d9",
+  "spec/classes/jdk_oracle_package_spec.rb": "87e12d075c3947551e28e45a2c2884ca",
+  "spec/spec_helper.rb": "459ec5c24a1926a35aed444dbbb9abbe",
+  "spec/spec_helper_acceptance.rb": "a285d3e73e432a37240e951f589bf1b5"
+}
