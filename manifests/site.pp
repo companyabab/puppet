@@ -1,4 +1,6 @@
 node default{
 class { 'dse': }
-class { 'java': }
+file {'/etc/naestam':
+content => "nene"
+}
 }
