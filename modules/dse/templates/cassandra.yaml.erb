@@ -7,7 +7,7 @@
 
 # The name of the cluster. This is mainly used to prevent machines in
 # one logical cluster from joining another.
-cluster_name: '<%= @clustername %>'
+cluster_name: 'sumanth_cluster'
 
 # This defines the number of tokens randomly assigned to this node on the ring
 # The more tokens, relative to other nodes, the larger the proportion of data
@@ -67,7 +67,7 @@ batchlog_replay_throttle_in_kb: 1024
 #   through Kerberos. Additional configuration is required in dse.yaml
 # - com.datastax.bdp.cassandra.auth.LdapAuthenticator For external authentication
 #   through Ldap. Additional configuration is required in dse.yaml
-authenticator: <%= @authenticator %>
+authenticator: PasswordAuthenticator
 #authenticator: com.datastax.bdp.cassandra.auth.KerberosAuthenticator
 #authenticator: com.datastax.bdp.cassandra.auth.LdapAuthenticator
 
@@ -78,7 +78,7 @@ authenticator: <%= @authenticator %>
 # - AllowAllAuthorizer allows any action to any user - set it to disable authorization.
 # - CassandraAuthorizer stores permissions in system_auth.permissions table. Please
 #   increase system_auth keyspace replication factor if you use this authorizer.
-authorizer: <% @CassandraAuthorizer %>
+authorizer: CassandraAuthorizer
 
 # Validity period for permissions cache (fetching permissions can be an
 # expensive operation depending on the authorizer, CassandraAuthorizer is
@@ -710,7 +710,7 @@ cross_node_timeout: false
 #
 # You can use a custom Snitch by setting this to the full class name
 # of the snitch, which will be assumed to be on your classpath.
-endpoint_snitch: <% @end_point %>
+endpoint_snitch: GossipingPropertyFileSnitch
 
 # controls how often to perform the more expensive part of host score
 # calculation
