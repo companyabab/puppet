@@ -1,6 +1,6 @@
 class dse{
 package { 'dse-full':
-   ensure => '4.8.9',
+   ensure => '4.8.9-1',
    before => Service['dse'],
   }
 service  {'dse':
